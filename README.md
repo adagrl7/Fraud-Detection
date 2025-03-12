@@ -3,6 +3,10 @@
 ![Fraud Detection Banner](https://via.placeholder.com/1200x300?text=Advanced+Fraud+Detection+%26+Analytics)
 
 Welcome to the **Advanced Fraud Detection & Analytics** project! This repository demonstrates an end-to-end solution to detect fraudulent transactions using state-of-the-art machine learning techniques, anomaly detection methods, and API deployment with FastAPI.
+## Deployed WebApp
+
+You can access the live version of the web app here:  
+[Deployed WebApp on Azure](https://fraud-api-app.azurewebsites.net/)
 
 ## Table of Contents
 
