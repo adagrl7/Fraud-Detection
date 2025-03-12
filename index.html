@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        h1 { color: #333; }
+        .container { max-width: 600px; margin: auto; }
+        input, button { padding: 0.5em; margin-top: 1em; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Fraud Detection Webpage</h1>
+        <p>{{ message }}</p>
+        <form action="/predict" method="post">
+            <label for="features">Enter Transaction Features (comma separated):</label>
+            <input type="text" id="features" name="features" placeholder="e.g., 0.1, 2.3, 4.5, 6.7">
+            <button type="submit">Predict Fraud</button>
+        </form>
+        {% if prediction %}
+            <h2>Prediction Results:</h2>
+            <p>Random Forest: {{ prediction.rf }}</p>
+            <p>XGBoost: {{ prediction.xgb }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
